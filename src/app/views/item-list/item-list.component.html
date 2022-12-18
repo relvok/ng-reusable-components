@@ -1,0 +1,19 @@
+<div class="ui item-title">
+  <h2>Item List</h2>
+</div>
+<div class="ui items">
+  <div class="item" *ngFor="let item of data">
+    <div class="image">
+      <img [src]="item.imageUrl" />
+    </div>
+    <div class="content">
+      <div class="header">{{ item.title }}</div>
+      <!-- <div class="meta">
+        <span class="cinema">{{ item.description }}</span>
+      </div> -->
+      <div class="description">
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
